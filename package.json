@@ -5,7 +5,7 @@
   "scripts": {
     "local": "node -r dotenv/config ./bin/www",
     "start": "node ./bin/www",
-    "migrate": "knex migrate:latest",
+    "migrate": "node -r dotenv/config ./node_modules/.bin/knex migrate:latest",
     "test": "./node_modules/.bin/jasmine-node spec --verbose"
   },
   "dependencies": {
