@@ -8,17 +8,20 @@
 
 ## Configuration Instruction
 
-1. `.env` file at root level has all environment variables i.e. db credential, api key.
-2. `env.example` file is the base file to create `.env` file at root level.
-3. Copy-paste `env.example` file to `.env` file.
-4. Set PORT number according to your convenient. Default is 3003.
-5. Set your Google map api key.
-6. Set MySql host, username and password.
-7. Never commit `.env` file.
-8. `env.example` file in repo is for reference to other programmers in team.
-9. If any change in `.env` file, do the same in `env.example` file and commit.
-10. If this project in future go into the docker, set all above environment variable into the docker way. No code change required.
-11. `dotenv` lib is used as dev-dependency for local, hence independent to environment.
+1. `.env` file contains all environment variables.
+2. Create `.env` file from `env.example` file.
+3. Never commit `.env` file.
+4. Open created `.env` file.
+5. Set PORT number according to your convenient. Default is 3003.
+6. Set your Google map api key.
+7. Open terminal, enter `mysql -u root -p`.
+8. Enter your mysql password you set after installation.
+9. run `create database database_name` and exit.
+9. Open `.env` file & set MySql host, username, password & database_name you set in setp 9.
+10. `env.example` file in repo is for reference to other programmers in team.
+11. If any change in `.env` file, do the same in `env.example` file and commit.
+12. If this project in future go into the docker, set all above environment variable into the docker way. No code change required.
+13. `dotenv` lib is used as dev-dependency for local, hence independent to environment.
 
 ## Built Instruction
 
