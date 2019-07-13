@@ -9,14 +9,14 @@
 ## Configuration Instruction
 
 1. `.env` file at root level has all environment variables i.e. db credential, api key.
-2. `.env.example` file is the base file to create `.env` file at root level.
-3. Copy-paste `.env.example` file to `.env` file.
+2. `env.example` file is the base file to create `.env` file at root level.
+3. Copy-paste `env.example` file to `.env` file.
 4. Set PORT number according to your convenient. Default is 3003.
 5. Set your Google map api key.
 6. Set MySql host, username and password.
 7. Never commit `.env` file.
-8. `.env.example` file in repo is for reference to other programmers in team.
-9. If any change in `.env` file, do the same in `.env.example` file and commit.
+8. `env.example` file in repo is for reference to other programmers in team.
+9. If any change in `.env` file, do the same in `env.example` file and commit.
 10. If this project in future go into the docker, set all above environment variable into the docker way. No code change required.
 11. `dotenv` lib is used as dev-dependency for local, hence independent to environment.
 
